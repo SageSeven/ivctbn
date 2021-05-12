@@ -1,0 +1,6 @@
+*.csv
+*.pyc
+.idea/*
+*.txt
+*.ipynb
+*.png
