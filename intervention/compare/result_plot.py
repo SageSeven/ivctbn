@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
 iv_rates = [0.1, 0.2, 0.3, 0.4, 0.5]
-data_lens = [1000, 2000, 3000, 4000, 5000, 10000, 15000, 20000, 25000]
+data_lens = [1000, 2000, 3000, 4000, 5000, 10000, 15000, 20000]
 
 
 def get_file_name(iv_rate_, data_len_):
@@ -21,7 +21,7 @@ for i, iv_rate in enumerate(iv_rates):
     else:
         j = i - 3
         plt.subplot(gs[1, (3*j):(3*j+3)])
-        data_n = 8 + (i - 3)
+        data_n = 7
     x = data_lens[:data_n]
     y0 = x.copy()
     y1 = x.copy()
